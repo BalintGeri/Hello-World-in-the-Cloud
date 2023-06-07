@@ -4,7 +4,7 @@ In this project I built an infrastructure on AWS with Terraform. With the help o
 
 ![5c1bb7dd5e7cc9678fcdc39f_Hello-World-Header](https://github.com/BalintGeri/Hello-World-in-the-Cloud/assets/109275872/58b1196a-3a9c-4c49-afa4-03a804869152)
 
-🛠️ The **tech** we have used in the project:
+🛠️ The **tech** used in the project:
 
 * Terraform
 * AWS
