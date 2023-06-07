@@ -7,10 +7,10 @@ In this project I built an infrastructure on AWS with Terraform. With the help o
 🛠️ The **tech** used in the project:
 
 * Terraform
+* HCL
 * AWS
 * Kubernetes
 * Node.js
 * Git
 * Docker
 * Vs Code
-
