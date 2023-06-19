@@ -2,7 +2,6 @@
 
 variable "region" {
   type = string
-  default = "eu-north-1"
 }
 
 //vpc cidr
@@ -38,7 +37,6 @@ variable "private_2_subnet_CIDR" {
 
 variable "availability_zones" {
   type    = list
-  default = ["eu-north-1b", "eu-north-1a"]
 }
 
 //route destination
