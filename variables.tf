@@ -45,3 +45,9 @@ variable "route_destination" {
   type    = string
   default = "0.0.0.0/0"
 }
+
+//eks version
+
+variable "eks_version" {
+  type    = string
+}
