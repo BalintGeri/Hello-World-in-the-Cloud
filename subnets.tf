@@ -1,7 +1,7 @@
 resource "aws_subnet" "public_1" {
   vpc_id                  = aws_vpc.main.id
-  cidr_block              = "192.168.0.0/18"
-  availability_zone       = "eu-north-1a"
+  cidr_block              = var.public_1_subnet_CIDR
+  availability_zone       = var.availability_zones[1]
   map_public_ip_on_launch = true
 
   tags = {
@@ -13,8 +13,8 @@ resource "aws_subnet" "public_1" {
 
 resource "aws_subnet" "public_2" {
   vpc_id                  = aws_vpc.main.id
-  cidr_block              = "192.168.64.0/18"
-  availability_zone       = "eu-north-1b"
+  cidr_block              = var.public_2_subnet_CIDR
+  availability_zone       = var.availability_zones[0]
   map_public_ip_on_launch = true
 
   tags = {
@@ -26,8 +26,8 @@ resource "aws_subnet" "public_2" {
 
 resource "aws_subnet" "private_1" {
   vpc_id            = aws_vpc.main.id
-  cidr_block        = "192.168.128.0/18"
-  availability_zone = "eu-north-1a"
+  cidr_block        = var.private_1_subnet_CIDR
+  availability_zone = var.availability_zones[1]
 
   tags = {
     Name                        = "private-eu-north-1a"
@@ -38,8 +38,8 @@ resource "aws_subnet" "private_1" {
 
 resource "aws_subnet" "private_2" {
   vpc_id            = aws_vpc.main.id
-  cidr_block        = "192.168.192.0/18"
-  availability_zone = "eu-north-1b"
+  cidr_block        = var.private_2_subnet_CIDR
+  availability_zone = var.availability_zones[0]
 
   tags = {
     Name                        = "private-eu-north-1b"
