@@ -14,3 +14,19 @@ In this project I build an infrastructure on AWS with Terraform. Terraform's bac
 * Git
 * Docker (Docker buildx)
 * Vs Code
+
+📄 Table of variables:
+
+| Variable | Description |
+| --- | --- |
+| region | Specifies the region of operations within AWS |
+| VPC_CIDR_block | Specifies the CIDR block of the VPC |
+| public_1_subnet_CIDR | Specifies the CIDR block of public_1_subnet |
+| public_2_subnet_CIDR | Specifies the CIDR block of public_2_subnet |
+| private_1_subnet_CIDR | Specifies the CIDR block of private_1_subnet |
+| private_2_subnet_CIDR | Specifies the CIDR block of private_2_subnet |
+| availability_zones | Specifies the availability zones used for the subnets within a list |
+| route_destination | Specifies the destination for the routes within the routing tables |
+| eks_version | Specifies the version of the EKS cluster |
+
+These values can be easily changed in the `terraform.tfvars` file.
