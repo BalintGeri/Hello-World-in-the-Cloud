@@ -38,6 +38,7 @@ jobs:
       run: terraform plan -out=tfplan
 
     - name: Execute plan
+      if: github.ref == 'refs/heads/main'
       run: terraform apply -input=false tfplan
       env:
         TF_APPLY: "true"
