@@ -12,6 +12,8 @@ In the /overview directory, an image about the infrastructure's topology and a d
 
 * Terraform
 * HCL
+* Javascript
+* Node.js
 * AWS
   - EKS
   - S3 bucket
@@ -19,7 +21,6 @@ In the /overview directory, an image about the infrastructure's topology and a d
   - EC2
   - IAM
 * Kubernetes (EKS)
-* Node.js
 * Git
 * Github Actions (CI/CD pipeline)
 * Docker (Docker buildx)
