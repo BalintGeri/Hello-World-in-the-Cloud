@@ -1,6 +1,8 @@
 # Hello-World-in-the-Cloud
 
-In this project I build an infrastructure on AWS with Terraform. Terraform's backend is remote. With the help of an EKS cluster, I deploy a basic Node.js app which is reachable on the public internet by an external load balancer and simply returns a "Hello World" in the browser just for demonstration purposes. The image which contains said app is built with docker and is a multi-architecture build (arm, arm64, amd64). There is also a **CI/CD** pipeline configured for this procejt. The pipeline is triggered by pull request or pushes towards the main branch but if github.ref is **not** pointing towards the main branch, terraform apply command will not run.
+In this project I build an infrastructure on AWS with Terraform. Terraform's backend is remote. With the help of an EKS cluster, I deploy a basic Node.js app which is reachable on the public internet by an external load balancer and simply returns a "Hello World" in the browser just for demonstration purposes. The image which contains said app is built with docker and is a multi-architecture build (arm, arm64, amd64). 
+
+There is also a **CI/CD** pipeline configured for this procejt. The pipeline is triggered by pull request or pushes towards the main branch but if github.ref is **not** pointing towards the main branch, terraform apply command will not run.
 
 In the /overview directory, an image about the infrastructure's topology and a dependency graph can be found. If the dependency graph is opened in any browser, an illustration will show the dependencies of all the infrastructure objects. 
 
