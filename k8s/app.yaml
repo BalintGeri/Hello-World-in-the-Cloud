@@ -6,7 +6,7 @@ metadata:
   labels:
     app: node-express-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: node-express-app
@@ -20,6 +20,13 @@ spec:
         image: geri12/my-apps:latest
         ports:
         - containerPort: 3000
+      resources:
+        limits:
+          cpu: "0.5"
+          memory: "512Mi"
+        requests:
+          cpu: "0.2"
+          memory: "256Mi"
 ---
 apiVersion: v1
 kind: Service
