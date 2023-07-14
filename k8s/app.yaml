@@ -20,8 +20,8 @@ spec:
         image: geri12/my-apps:latest
         resources:
           limits:
-            cpu: "500m"
-            memory: "512Mi"
+            cpu: "1"
+            memory: "1Gi"
         ports:
         - containerPort: 3000
 ---
