@@ -4,6 +4,6 @@
     "config:base"
   ],
   "kubernetes": {
-    "filematch": ["app/.+\\.yaml$"]
+    "fileMatch": ["k8s/.+\\.yaml$"]
   }
 }
